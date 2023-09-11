@@ -1,0 +1,93 @@
+body{
+    background-color: rgb(10, 40, 80);   
+    background-image: url(backgroundfinal.jpeg); 
+    align-content: center;
+    margin-top: 0%;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-bottom: 20%;
+    justify-content: space-evenly;
+    justify-items: auto;
+}
+img {
+    width: 100%;
+    height: 50%;
+    align-items: center;
+    align-content: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+h1{
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-family: Rockwell;
+    font-weight: 900;
+    font-size: 30pt;
+}
+h2{
+    text-align: center;
+    font-family: Rockwell;
+}
+.scenes1 {
+    align-items: center;
+    align-content: center;
+    color: white;
+    justify-content: space-evenly;
+    border: whitesmoke;
+    margin: auto;
+    width: 50%;
+}
+.scenes2{
+    align-items: center;
+    align-content: center;
+    color: white;
+    justify-content: space-evenly;
+    border: whitesmoke;
+    margin: auto;
+    width: 50%;
+}
+.scenes3{
+    align-items: center;
+    align-content: center;
+    color: white;
+    justify-content: space-evenly;
+    border: whitesmoke;
+    margin: auto;
+    width: 50%;
+}
+.scenenumber{
+    font-family: Rockwell;
+    font-weight: bold;
+    font-size: 20pt;
+    color: rgb(158, 158, 158);
+}
+
+.quotes{
+    font-family: Rockwell;
+    color: white;
+}
+.quotes2{
+    font-family: Rockwell;
+    color: rgb(141, 202, 212);
+}
+.quotes3{
+    font-family: Rockwell;
+    color: rgb(177, 170, 224);
+}
+.quotes4{
+    font-family: Rockwell;
+    color: rgb(140, 160, 141);
+}
+.quotes5{
+    font-family: Rockwell;
+    color: rgb(241, 187, 178);
+}
+.quotes6{
+    font-family: Rockwell;
+    color: rgb(101, 168, 255);
+}
+.action{
+    font-style: italic;
+    background-color: rgb(107, 126, 151);
+}
