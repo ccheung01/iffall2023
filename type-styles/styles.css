@@ -1,0 +1,57 @@
+html{
+    font-family: 'Crimson Text', serif;
+    font-size: 24px;
+    background-color: rgb(233, 233, 233);
+    padding: 10%;
+}
+section{
+    margin: 20px;
+    padding-top: 20px;
+    text-indent: 10rem;
+}
+h1{
+    color: crimson;
+}
+h2{
+    color: crimson;
+}
+h3{
+    color: red;
+    font-size: 18px;
+    font-family: 'Encode Sans', sans-serif;
+}
+.normal{
+    font-family: 'Crimson Text', serif;
+    font-size: 24px;
+    color: black;
+}
+.bold{
+    font-weight: bold;
+}
+.italic{
+    font-style: italic;
+}
+.smallem{
+    letter-spacing: .3em;
+}
+.bigem{
+    letter-spacing: -.06em;
+}
+.underline{
+    text-decoration: underline;
+}
+.linethrough{
+    text-decoration: line-through;
+}
+.overline{
+    text-decoration: overline;
+}
+.uppercase{
+    text-transform: uppercase;
+}
+.lowercase{
+    text-transform: lowercase;
+}
+.capitalize{
+    text-transform: capitalize;
+}
