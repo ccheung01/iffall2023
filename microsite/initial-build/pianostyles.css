@@ -1,0 +1,239 @@
+html{
+    background-color: black;
+    width: 100%;
+    height: 100%;
+}
+
+.content-container{
+    width: 100%;
+    margin: auto;
+}
+
+/* homepage/general code */
+
+a{
+    text-decoration: none;
+    color: white;
+
+}
+
+p, ul{
+    color: white;
+    font-family: "karmina", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+h1{
+    position: absolute;
+    right: 40px;
+    bottom: 40px;
+    font-size: 60px;
+}
+
+h2{
+    font-size: 45px;
+}
+
+h1, h2{
+    color: white;
+    font-family: 'Sintony', sans-serif;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+
+h3{
+    color: gold;
+    font-family: "karmina", serif;
+    font-weight: 400;
+    font-size: 30px;
+    padding: 50px;
+    padding-top: 70px;
+    width: 50%;
+    text-align: center;
+    margin: auto;
+}
+
+nav{
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Sintony', sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    /* top: 0;
+    position: fixed; */
+    width: 100%;
+    margin: auto;
+}
+
+nav a{
+    padding: 80px;
+}
+
+img.logo{
+    width: 50px;
+    height: 50px;
+    padding-top: 20px;
+}
+ .headerpianos{
+    /* top: 120px;
+    position: absolute; */
+    padding-top: 50px;
+    width: 100%;
+    height: 850px;
+    object-fit: fill;
+    object-position: top center;
+    left: 0;
+}
+
+.headerpianos{
+    opacity: 50%;
+}
+
+.bodytext p{
+    color: white;
+    font-family: "karmina", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 19px;
+}
+
+/* general image layout */
+
+.squaregrid{
+    width: 48%;
+    height: 350px;
+    margin: 5px;
+    object-fit: cover;
+}
+
+/* general header layout */
+
+.left-sideheader{
+    transform: rotate(90deg);
+    width: 20%;
+    padding-top: 200px ;
+    margin-right: 20px;
+    margin-left: 30px;
+}
+
+.right-sideheader{
+    transform: rotate(90deg);
+    width: 100%;
+    padding-top: 45%;
+    padding-left: 30px;
+}
+
+
+/* grand section */
+.first-container {
+    display: flex;
+    width: 90%;
+    margin: auto;
+    padding-top: 100px;
+}
+
+.first-image{
+    width: 50%;
+}
+
+.first-container .left-sideheader{
+    top: 20px;
+}
+
+/* special collection section */
+.second-container{
+    display: flex;
+    width: 90%;
+    margin: auto;
+    padding-top: 300px;
+}
+
+.second-image{
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.second-container .left-sideheader{
+    height: 100px;
+}
+
+/* exotic woods section*/
+.third-container{
+    display: flex;
+    width: 90%;
+    margin: auto;
+    padding-top: 300px;
+    padding-bottom: 250px;
+}
+
+.third-image{
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.third-image .squaregrid{
+    height: 400px;
+}
+
+/* .third-container .right-sideheader{
+    padding-top: 0;
+    height: 10px;
+} */
+
+.third-container .bodytext{
+    width: 40%;
+}
+
+/* upright Section */
+
+.fourth-container{
+    display: flex;
+    width: 90%;
+    margin: auto;
+    padding-top: 60px;
+    margin-left: 455px;
+}
+
+.fourth-image{
+    width: 30%;
+    padding-left: 60px;
+}
+
+.doubleimg{
+    width: 400px;
+    height: 300px;
+}
+
+.fourth-container .right-sideheader{
+    height: 10px;
+    top: 500px;
+    right: 200px;
+    margin-left:70px ;
+}
+
+
+.fourth-container .bodytext{
+    width: 40%;
+}
+
+
+footer{
+    background-color: black;
+    width: 100%;
+    padding: 60px;
+    padding-bottom: 30px;
+}
+
+footer p{
+    color: white;
+    font-family: "karmina", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 14px;
+}
