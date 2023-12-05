@@ -1,0 +1,286 @@
+html{
+    background-color: black;
+    width: 100%;
+    height: 100%;
+}
+
+.content-container{
+    width: 90%;
+    margin: auto;
+}
+
+/* homepage/general code */
+
+a{
+    text-decoration: none;
+    color: white;
+
+}
+
+p{
+    color: white;
+    font-family: "karmina", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+h1{
+    position: absolute;
+    right: 40px;
+    bottom: 40px;
+    font-size: 60px;
+}
+
+h2{
+    font-size: 45px;
+}
+
+h1, h2{
+    color: white;
+    font-family: 'Sintony', sans-serif;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+
+h3{
+    color: gold;
+    font-family: "karmina", serif;
+    font-weight: 400;
+    font-size: 30px;
+    padding: 50px;
+    padding-top: 70px;
+    width: 50%;
+    text-align: center;
+    margin: auto;
+}
+
+nav{
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Sintony', sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    /* top: 0;
+    position: fixed; */
+    width: 100%;
+    margin: auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    height: 60px;
+}
+
+nav a{
+    padding: 0 80px;
+    vertical-align: middle;
+}
+
+img.logo{
+    width: 50px;
+    height: 50px;
+    /* padding-top: 20px; */
+    /* transform: translateY(12px); */
+}
+.headerhome, .headerabout, .headerpianos, .headermanufacture, .headerartists, .headerpurchase{
+    /* top: 120px;
+    position: absolute; */
+    /* padding-top: 50px; */
+    width: 100%;
+    height: 850px;
+    object-fit: fill;
+    object-position: top center;
+    left: 0;
+}
+
+.headerhome{
+    height: calc(100vh - 96px);
+    /* height: 80vh; */
+    width: 100vw;
+    object-fit: cover;
+}
+
+.headerabout, .headerpianos, .headermanufacture, .headerartists, .headerpurchase{
+    opacity: 50%;
+}
+
+section{
+    width: 100%;
+    margin: auto;
+    height: auto;
+}
+
+.quote{
+    padding-top: 150px;
+    padding-bottom: 100px;
+}
+
+/* grand section */
+.first-container {
+    display: flex;
+    width: 90%;
+    margin: auto;
+    padding-top: 100px;
+
+}
+
+.grand-sideheader{
+    transform: rotate(90deg);
+    width: 20%;
+    padding-top: 200px ;
+    margin-right: 20px;
+    margin-left: 30px;
+}
+.first-image{
+    width: 50%;
+}
+.singleimg{
+    width: 800px;
+    height: 550px;
+}
+.first-subtext{
+    width: 100%;
+    text-align: center;
+    padding-top: 10%;
+}
+
+/* special collection section */
+.second-container{
+    display: flex;
+    width: 90%;
+    margin: auto;
+    padding-top: 300px;
+    padding-left: 45%;
+}
+
+.second-image{
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.gridimg{
+    width: 48%;
+    height: auto;
+    margin: 5px;
+    object-fit: cover;
+}
+
+.special-sideheader{
+    transform: rotate(90deg);
+    width: 100%;
+    padding-top: 45%;
+    padding-left: 30px;
+}
+
+.special-sideheader h2{
+    margin: 0;
+}
+
+
+/* exotic woods section*/
+.third-container{
+    display: flex;
+    width: 90%;
+    margin: auto;
+    padding-top: 300px;
+}
+
+.exotic-sideheader{
+    transform: rotate(90deg);
+    height: 100%;
+    width: 100%;
+    padding-bottom: 45%;
+    padding-right: 30px;
+}
+
+.third-image{
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.squaregrid{
+    width: 48%;
+    height: auto;
+    margin: 5px;
+    object-fit: cover;
+}
+
+/* upright Section */
+
+.fourth-container{
+    display: flex;
+    width: 90%;
+    margin: auto;
+    padding-top: 300px;
+}
+
+.upright-sideheader{
+    transform: rotate(90deg);
+    padding-top: 15%;
+    top: 30px;
+}
+.fourth-image{
+    width: 50%;
+    padding-left: 10%;
+}
+.singleimg{
+    width: 800px;
+    height: 550px;
+}
+.second-subtext{
+    width: 100%;
+    text-align: center;
+    padding-left: 100px;
+}
+
+/* explore section */
+
+.fifth-container{
+    display: flex;
+    padding-top: 200px;
+    padding-bottom: 250px;
+}
+
+.explore-sideheader{
+    transform: rotate(90deg);
+}
+
+.fifth-container a{
+    font-family: 'Sintony', sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    color: black;
+}
+.aboutbox, .pianobox, .manufacturebox, .artistsbox, .purchasebox{  
+    background-color: white;
+    margin: 10px;
+    width: 150px;
+    height: 170px;
+    padding-left: 20px;
+    padding-top: 20px;
+    display: flex;
+    margin-bottom: 90px;
+}
+
+footer{
+    background-color: black;
+    width: 100%;
+    padding: 60px;
+    padding-bottom: 30px;
+}
+
+footer p{
+    color: white;
+    font-family: "karmina", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 14px;
+}
+
+
+
+
+

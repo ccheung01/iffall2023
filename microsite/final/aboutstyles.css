@@ -1,0 +1,275 @@
+
+.headerabout{
+    height: calc(100vh - 96px);
+    /* height: 80vh; */
+    width: 100vw;
+    object-fit: cover;
+    opacity: 50%;
+    object-fit: fill;
+    object-position: top center;
+    left: 0;
+    margin: 0;
+}
+
+/* foundation */
+
+.first-container{
+    margin: auto;
+    /* padding-left: 280px; */
+    width: 70%;
+    max-width: 900px;
+    padding-top: 200px;
+    padding-bottom: 200px;
+    /* display: flex; */
+    /* padding-top: 300px;
+    padding-bottom: 300px;
+    padding-right: 600px;
+    margin-right: 200px; */
+    position: relative;
+}
+
+.foundation-sideheader{
+    position: absolute;
+    transform: rotate(90deg);
+    transform-origin: bottom left;
+    top: 150px;
+    left: -90px;
+    margin: 0;
+    line-height: 1;
+}
+
+.historyimage{
+    float: left;
+    padding-right: 40px;
+    padding-bottom: 15px;
+}
+
+.profile{
+    width: 250px;
+    height: 300px;
+}
+
+.bodytext p{
+    color: white;
+    font-family: "karmina", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 19px;
+}
+
+/* steinway halls */
+
+.second-container{
+    display: flex;
+    /* padding-left: 280px; */
+    width: 70%;
+    max-width: 900px;
+    padding-bottom: 200px;
+    position: relative;
+    margin: auto;
+}
+
+.steinwayhalls-sideheader{
+    transform: rotate(90deg);
+    transform-origin: bottom left;
+    top: -50px;
+    right: -430px;
+    margin: 0;
+    line-height: 1;
+    position: absolute;
+}
+
+.second-bodytext p{
+    color: white;
+    font-family: "karmina", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 19px;
+}
+
+.steinwayimage{
+    float: right;
+    padding-left: 50px;
+    padding-bottom: 15px;
+}
+
+.steinwayhall{
+    width: 450px;
+    height: 500px;
+}
+
+/* expansion */
+.third-container{
+    padding-bottom: 300px;
+    /* padding-left: 280px; */
+    width: 70%;
+    max-width: 900px;
+    position: relative;
+    margin: auto;
+}
+
+.expansion-sideheader{
+    position: absolute;
+    transform: rotate(90deg);
+    transform-origin: bottom left;
+    top: -40px;
+    left: -90px;
+    margin: 0;
+    line-height: 1;
+}
+
+
+.third-bodytext p{
+    color: white;
+    font-family: "karmina", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 19px;
+}
+
+
+/* hover stylings */
+
+
+.first-container:hover h2,.second-container:hover h2,.third-container:hover h2{
+    color: rgb(192, 3, 3);
+    transform: translateX(-90px);
+}
+
+/* responsive */
+
+@media (max-width:1000px){
+    .steinwayhall{
+        width: 300px;
+        height: 400px;
+    }
+}
+
+@media (max-width:800px){
+    .steinwayhall{
+        width: 250px;
+        height: 300px;
+    }
+    .bodytext p, .second-bodytext p, .third-bodytext p{
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 690px){
+    .foundation-sideheader{
+        top: 160px;
+        left: -70px;
+    }
+    .steinwayhalls-sideheader{
+        top: -40px;
+        right: -370px;
+    }
+    .expansion-sideheader{
+        left: -70px;
+    }
+    .headerabout{
+        object-fit: cover;
+    }
+}
+
+@media (max-width: 637px){
+    .steinwayhalls-sideheader{
+        left: -70px;
+    }
+    .steinwayimage{
+        float: left;
+        padding-left: 0;
+        padding-right: 40px;
+    }
+}
+
+@media (max-width: 618px){
+    .first-container{
+        width: 75%;
+    }
+    .second-container{
+        width: 75%;
+    }
+    .third-container{
+        padding-bottom: 100px;
+        width: 75%;
+    }
+    .bodytext p, .second-bodytext p, .third-bodytext p{
+        font-size: 17px;
+    }
+}
+
+@media (max-width:490px){
+    .foundation-sideheader{
+        top: 70px;
+        left: -50px;
+    }
+    .steinwayhalls-sideheader{
+        top: -30px;
+        left: -50px;
+    }
+    .expansion-sideheader{
+        top: -25px;
+        left: -50px;
+    }
+    .steinwayimage{
+        padding-right: 0;
+    }
+    .first-container{
+        width: 60%;
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+    .second-container{
+        width: 60%;
+        padding-bottom: 100px;
+    }
+    .third-container{
+        padding-bottom: 100px;
+        width: 60%;
+    }
+}
+
+@media (max-width: 465px){
+    .profile{
+        width: 150px;
+        height: 200px;
+    }
+    .historyimage{
+        padding-right: 10px;
+    }
+    .steinwayhall{
+        width: 200px;
+        height: 250px;
+    }
+
+    .first-container{
+        padding-left: 40px;
+        width: 60%;
+    }
+    .second-container{
+        padding-left: 40px;
+        width: 60%;
+    }
+    .third-container{
+        padding-left: 40px;
+        width: 60%;
+    }
+    .foundation-sideheader{
+        left: -20px;
+    }
+    .steinwayhalls-sideheader{
+        left: -20px;
+    }
+    .expansion-sideheader{
+        left: -20px;
+    }
+    .bodytext p, .second-bodytext p, .third-bodytext p{
+        font-size: 15px;
+    }
+}
+
+
+
+
+

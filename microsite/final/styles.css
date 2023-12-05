@@ -1,0 +1,409 @@
+ .quote h3 {
+    padding-top: 70px;
+    width: 80%;
+}
+
+.headerhome{
+    height: calc(100vh - 96px);
+    /* height: 80vh; */
+    width: 100vw;
+    object-fit: fill;
+    object-position: top center;
+    left: 0;
+}
+
+.quote{
+    padding-top: 150px;
+    padding-bottom: 100px;
+    margin: auto;
+}
+
+
+/* grand section */
+.first-container {
+    display: flex;
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    padding-top: 100px;
+    position: relative;
+}
+
+.grand-sideheader{
+    position: absolute;
+    transform: rotate(90deg);
+    transform-origin: bottom left;
+    top: 50px;
+    left: -80px;
+    margin: 0;
+    line-height: 1;
+}
+
+.first-image{
+    width: 40%;
+}
+.singleimg{
+    height: auto;
+}
+.first-subtext{
+    width: 40%;
+    text-align: center;
+    margin: auto;
+}
+
+/* upright Section */
+
+.second-container{
+    display: flex;
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    padding-top: 200px;
+    position: relative;
+}
+
+.upright-sideheader{
+    position: absolute;
+    transform: rotate(90deg);
+    transform-origin: bottom left;
+    top: 150px;
+    right: -245px;
+    margin: 0;
+    line-height: 1;
+}
+.second-image{
+    width: 40%;
+}
+.singleimg{
+    width: 100%;
+    height: auto;
+}
+.second-subtext{
+    width: 40%;
+    text-align: center;
+    margin: auto;
+}
+
+/* exotic woods section*/
+.third-container{
+    width: 90%;
+    margin: auto;
+    max-width: 1000px;
+    padding-top: 200px;
+    position: relative;
+}
+
+.exotic-sideheader{
+    position: absolute;
+    transform: rotate(90deg);
+    transform-origin: bottom left;
+    top: 160px;
+    left: -80px;
+    margin: 0;
+    line-height: 1;
+}
+
+.third-image{
+    margin: auto;
+    font-size: 0;
+}
+
+.squaregrid{
+    width: calc(50% - 10px);
+    height: 300px;
+    margin: 5px;
+    object-fit: cover;
+}
+
+/* special collection section */
+.fourth-container{
+    display: flex;
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    padding-top: 200px;
+    position: relative;
+}
+
+.fourth-image{
+    font-size: 0;
+}
+
+.gridimg{
+    width: calc(50% - 10px);
+    height: 300px;
+    margin: 5px;
+    object-fit: cover;
+}
+
+.special-sideheader{
+    position: absolute;
+    transform: rotate(90deg);
+    transform-origin: bottom left;
+    top: 155px;
+    right: -500px;
+    margin: 0;
+    line-height: 1;
+}
+
+
+
+/* explore section */
+
+.fifth-container{
+    display: flex;
+    width: 90%;
+    margin: auto;
+    max-width: 1000px;
+    padding-top: 150px;
+    padding-bottom: 250px;
+    position: relative;
+}
+
+.explore-sideheader{
+    position: absolute;
+    transform: rotate(90deg);
+    transform-origin: bottom left;
+    top: 100px;
+    left: -80px;
+    margin: 0;
+    line-height: 1;
+}
+
+.fifth-container a{
+    font-family: 'Sintony', sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    color: black;
+}
+.aboutbox, .pianobox, .manufacturebox{  
+    background-color: white;
+    margin-right: 20px;
+    width: 50%;
+    height: 170px;
+    padding-left: 20px;
+    padding-top: 20px;
+    display: flex;
+    margin-bottom: 90px;
+}
+
+.artistsbox{
+    background-color: white;
+    width: 50%;
+    height: 170px;
+    padding-left: 20px;
+    padding-top: 20px;
+    display: flex;
+    margin-bottom: 90px;
+}
+
+
+/* hover stylings */
+
+.first-container:hover h2,.second-container:hover h2,.third-container:hover h2,.fourth-container:hover h2{
+    color: rgb(192, 3, 3);
+    transform: translateX(-90px);
+}
+
+.fifth-container:hover h2{
+    color: rgb(192, 3, 3);
+}
+
+.fifth-container .aboutbox:hover, .fifth-container .pianobox:hover, .fifth-container .manufacturebox:hover, .fifth-container .artistsbox:hover{
+    background-color: red;
+    transform: translateY(-15px);
+}
+
+
+/* Responsive */
+
+@media (max-width:1060px){
+    .first-container, .second-container, .third-container, .fourth-container, .fifth-container{
+        width: 80%;
+    }
+
+    .fifth-container{
+        padding-bottom: 100px;
+    }
+
+    .fifth-container a{
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 936px){
+    .second-subtext h3{
+        font-size: 24px;
+    }
+
+    .fifth-container, .aboutbox, .pianobox, .manufacturebox, .artistsbox{
+        flex-direction: column;
+    }
+
+    .aboutbox, .pianobox, .manufacturebox, .artistsbox{
+        height: auto;
+        width:calc(100% - 20px);
+        padding-bottom: 20px;
+        margin-bottom: 20px;
+        margin-right: 0;
+    }
+}
+
+@media (max-width:860px){
+    .first-container, .second-container, .third-container, .fourth-container, .fifth-container{
+        width: 70%;
+    }
+    .first-container{
+        padding-top: 50px;
+        flex-direction: column;
+    }
+    .grand-sideheader{
+        top: 0px;
+    }
+    .first-image{
+        margin: auto;
+        width: 100%;
+    }
+    .first-subtext{
+        padding-top: 30px;
+        width: 100%;
+    }
+    .second-container{
+        flex-direction: column-reverse;
+    }
+    .second-image{
+        margin: auto;
+        width: 100%;
+    }
+    .second-subtext{
+        width: 100%;
+        padding-top: 30px;
+    }
+}
+
+
+@media (max-width:690px){
+    
+    .grand-sideheader{
+        top: 10px;
+        left: -70px;
+    }
+    .upright-sideheader{
+        top: 155px;
+        right: -220px;
+    }
+    .exotic-sideheader{
+        top: 160px;
+        left: -70px;
+    }
+    .special-sideheader{
+        top: 155px;
+        right: -445px;
+    }
+    .explore-sideheader{
+        top: 110px;
+        left: -70px;
+    }
+}
+
+@media (max-width:580px) {
+    .second-subtext h3{
+        font-size: 21px;
+    }
+    .third-container{
+        flex-direction: column;
+    }
+    .squaregrid{
+        width: 100%;
+        height: 150px;
+    }
+    .fourth-container{
+        flex-direction: column;
+    }
+    .gridimg{
+        width: 100%;
+        height: 150px;
+    }
+}
+
+@media (max-width:545px){
+    .quote{
+        padding-top: 50px;
+    }
+    .first-container, .second-container, .third-container, .fourth-container, .fifth-container{
+        width: 60%;
+    }
+
+    .grand-sideheader h2, .upright-sideheader h2, .exotic-sideheader h2, .special-sideheader h2, .explore-sideheader h2{
+        font-size: 35px;
+    }
+
+    .grand-sideheader{
+        top: 65px;
+        left: -60px;
+    }
+    .upright-sideheader{
+        top: 160px;
+        right: -190px;
+    }
+    .exotic-sideheader{
+        top: 170px;
+        left: -60px;
+    }
+    .special-sideheader{
+        top: 160px;
+        right: -390px;
+    }
+    .explore-sideheader{
+        top: 115px;
+        left: -60px;
+    }
+}
+
+@media (max-width:480px){
+    .second-container, .third-container, .fourth-container, .fifth-container{
+        padding-top: 100px;
+    }
+
+    .first-container{
+        padding-top: 0;
+    }
+
+    .grand-sideheader{
+        top: -40px;
+        left: -60px;
+    }
+    .upright-sideheader{
+        top: 60px;
+        right: -190px;
+    }
+    .exotic-sideheader{
+        top: 70px;
+        left: -60px;
+    }
+    .special-sideheader{
+        top: 60px;
+        right: -395px;
+    }
+    .explore-sideheader{
+        top: 65px;
+        left: -60px;
+    }
+}
+
+@media (max-width:450px){
+    .fifth-container a{
+        font-size: 17px;
+    }
+    .second-subtext h3{
+        font-size: 19px;
+    }
+    
+}
+
+@media (max-width:390px){
+    .second-subtext h3{
+        font-size: 15px;
+    }
+
+}
