@@ -1,89 +1,3 @@
-html{
-    background-color: black;
-}
-
-.content-container{
-    width: 90%;
-    margin: auto;
-}
-
-/* homepage/general code */
-
-a{
-    text-decoration: none;
-    color: white;
-
-}
-
-p{
-    color: white;
-    font-family: "karmina", serif;
-    font-weight: 400;
-    font-style: normal;
-}
-
-h1{
-    position: absolute;
-    right: 40px;
-    bottom: 40px;
-    font-size: 60px;
-    margin: 0;
-}
-
-h2{
-    font-size: 45px;
-}
-
-h1, h2{
-    color: white;
-    font-family: 'Sintony', sans-serif;
-    font-weight: 400;
-    text-transform: uppercase;
-}
-
-
-h3{
-    color: gold;
-    font-family: "karmina", serif;
-    font-weight: 400;
-    font-size: 30px;
-    padding: 50px;
-    padding-top: 70px;
-    width: 50%;
-    text-align: center;
-    margin: auto;
-}
-
-nav{
-    justify-content: space-between;
-    align-items: center;
-    font-family: 'Sintony', sans-serif;
-    font-weight: 700;
-    font-size: 20px;
-    /* top: 0;
-    position: fixed; */
-    width: 100%;
-    margin: auto;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    height: 60px;
-}
-
-nav a{
-    padding: 0 80px;
-    vertical-align: middle;
-}
-
-.nav_red{
-    color: rgb(192, 3, 3);
-}
-
-img.logo{
-    width: 50px;
-    height: 50px;
-    /* padding-top: 20px; */
-    /* transform: translateY(12px); */
-}
 
 .headerabout{
     height: calc(100vh - 96px);
@@ -94,14 +8,16 @@ img.logo{
     object-fit: fill;
     object-position: top center;
     left: 0;
+    margin: 0;
 }
 
 /* foundation */
 
 .first-container{
-    width: 90%;
     margin: auto;
-    padding-left: 280px;
+    /* padding-left: 280px; */
+    width: 70%;
+    max-width: 900px;
     padding-top: 200px;
     padding-bottom: 200px;
     /* display: flex; */
@@ -109,32 +25,28 @@ img.logo{
     padding-bottom: 300px;
     padding-right: 600px;
     margin-right: 200px; */
+    position: relative;
 }
 
 .foundation-sideheader{
     position: absolute;
     transform: rotate(90deg);
     transform-origin: bottom left;
-    top: 1150px;
-    left: 250px;
+    top: 150px;
+    left: -90px;
     margin: 0;
     line-height: 1;
 }
 
 .historyimage{
     float: left;
-    padding-right: 50px;
-    padding-bottom: 50px;
+    padding-right: 40px;
+    padding-bottom: 15px;
 }
 
 .profile{
     width: 250px;
     height: 300px;
-}
-
-.bodytext{
-    width: 70%;
-    margin-left: 60px;
 }
 
 .bodytext p{
@@ -149,27 +61,22 @@ img.logo{
 
 .second-container{
     display: flex;
-    width: 90%;
-    padding-left: 280px;
+    /* padding-left: 280px; */
+    width: 70%;
+    max-width: 900px;
     padding-bottom: 200px;
+    position: relative;
+    margin: auto;
 }
 
 .steinwayhalls-sideheader{
-    position: absolute;
     transform: rotate(90deg);
     transform-origin: bottom left;
-    top: 1660px;
-    right: -55px;
+    top: -50px;
+    right: -430px;
     margin: 0;
     line-height: 1;
-}
-
-.steinwayhalls-sideheader h2{
-    width: 100%;
-}
-
-.second-bodytext{
-    width: 40%;
+    position: absolute;
 }
 
 .second-bodytext p{
@@ -180,26 +87,33 @@ img.logo{
     font-size: 19px;
 }
 
+.steinwayimage{
+    float: right;
+    padding-left: 50px;
+    padding-bottom: 15px;
+}
+
 .steinwayhall{
     width: 450px;
     height: 500px;
-    padding-left: 50px;
-    float: right;
 }
 
 /* expansion */
 .third-container{
-    width: 90%;
     padding-bottom: 300px;
-    padding-left: 280px;
+    /* padding-left: 280px; */
+    width: 70%;
+    max-width: 900px;
+    position: relative;
+    margin: auto;
 }
 
 .expansion-sideheader{
     position: absolute;
     transform: rotate(90deg);
     transform-origin: bottom left;
-    top: 2385px;
-    left: 250px;
+    top: -40px;
+    left: -90px;
     margin: 0;
     line-height: 1;
 }
@@ -211,35 +125,150 @@ img.logo{
     font-weight: 400;
     font-style: normal;
     font-size: 19px;
-    width: 75%;
 }
 
-footer{
-
-    background-color: black;
-    padding: 60px;
-    padding-bottom: 30px;
-}
-
-footer p{
-    color: white;
-    font-family: "karmina", serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 11px;
-    margin: 5px;
-}
 
 /* hover stylings */
 
-nav a:hover{
-    color: rgb(192, 3, 3);
-}
 
 .first-container:hover h2,.second-container:hover h2,.third-container:hover h2{
     color: rgb(192, 3, 3);
     transform: translateX(-90px);
 }
+
+/* responsive */
+
+@media (max-width:1000px){
+    .steinwayhall{
+        width: 300px;
+        height: 400px;
+    }
+}
+
+@media (max-width:800px){
+    .steinwayhall{
+        width: 250px;
+        height: 300px;
+    }
+    .bodytext p, .second-bodytext p, .third-bodytext p{
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 690px){
+    .foundation-sideheader{
+        top: 160px;
+        left: -70px;
+    }
+    .steinwayhalls-sideheader{
+        top: -40px;
+        right: -370px;
+    }
+    .expansion-sideheader{
+        left: -70px;
+    }
+    .headerabout{
+        object-fit: cover;
+    }
+}
+
+@media (max-width: 637px){
+    .steinwayhalls-sideheader{
+        left: -70px;
+    }
+    .steinwayimage{
+        float: left;
+        padding-left: 0;
+        padding-right: 40px;
+    }
+}
+
+@media (max-width: 618px){
+    .first-container{
+        width: 75%;
+    }
+    .second-container{
+        width: 75%;
+    }
+    .third-container{
+        padding-bottom: 100px;
+        width: 75%;
+    }
+    .bodytext p, .second-bodytext p, .third-bodytext p{
+        font-size: 17px;
+    }
+}
+
+@media (max-width:490px){
+    .foundation-sideheader{
+        top: 70px;
+        left: -50px;
+    }
+    .steinwayhalls-sideheader{
+        top: -30px;
+        left: -50px;
+    }
+    .expansion-sideheader{
+        top: -25px;
+        left: -50px;
+    }
+    .steinwayimage{
+        padding-right: 0;
+    }
+    .first-container{
+        width: 60%;
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+    .second-container{
+        width: 60%;
+        padding-bottom: 100px;
+    }
+    .third-container{
+        padding-bottom: 100px;
+        width: 60%;
+    }
+}
+
+@media (max-width: 465px){
+    .profile{
+        width: 150px;
+        height: 200px;
+    }
+    .historyimage{
+        padding-right: 10px;
+    }
+    .steinwayhall{
+        width: 200px;
+        height: 250px;
+    }
+
+    .first-container{
+        padding-left: 40px;
+        width: 60%;
+    }
+    .second-container{
+        padding-left: 40px;
+        width: 60%;
+    }
+    .third-container{
+        padding-left: 40px;
+        width: 60%;
+    }
+    .foundation-sideheader{
+        left: -20px;
+    }
+    .steinwayhalls-sideheader{
+        left: -20px;
+    }
+    .expansion-sideheader{
+        left: -20px;
+    }
+    .bodytext p, .second-bodytext p, .third-bodytext p{
+        font-size: 15px;
+    }
+}
+
 
 
 

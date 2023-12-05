@@ -1,112 +1,21 @@
-html{
-    background-color: black;
-}
-
-.content-container{
-    width: 90%;
-    margin: auto;
-}
-
-/* homepage/general code */
-
-a{
-    text-decoration: none;
-    color: white;
-
-}
-
-p{
-    color: white;
-    font-family: "karmina", serif;
-    font-weight: 400;
-    font-style: normal;
-}
-
-h1{
-    position: absolute;
-    right: 40px;
-    bottom: 40px;
-    font-size: 60px;
-}
-
-h2{
-    font-size: 45px;
-}
-
-h1, h2{
-    color: white;
-    font-family: 'Sintony', sans-serif;
-    font-weight: 400;
-    text-transform: uppercase;
-}
-
-
  .quote h3 {
-    color: gold;
-    font-family: "karmina", serif;
-    font-weight: 400;
-    font-size: 30px;
-    padding: 50px;
     padding-top: 70px;
-    width: 50%;
-    text-align: center;
-    margin: auto;
-}
-
-nav{
-    justify-content: space-between;
-    align-items: center;
-    font-family: 'Sintony', sans-serif;
-    font-weight: 700;
-    font-size: 20px;
-    /* top: 0;
-    position: fixed; */
-    width: 100%;
-    margin: auto;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    height: 60px;
-}
-
-nav a{
-    padding: 0 80px;
-    vertical-align: middle;
-}
-
-.nav_red{
-    color: rgb(192, 3, 3);
-}
-
-img.logo{
-    width: 50px;
-    height: 50px;
-    /* padding-top: 20px; */
-    /* transform: translateY(12px); */
+    width: 80%;
 }
 
 .headerhome{
     height: calc(100vh - 96px);
     /* height: 80vh; */
     width: 100vw;
-    object-fit: cover;
     object-fit: fill;
     object-position: top center;
     left: 0;
 }
 
-.headerabout, .headerpianos, .headermanufacture, .headerartists, .headerpurchase{
-    opacity: 50%;
-}
-
-section{
-    width: 100%;
-    margin: auto;
-    height: auto;
-}
-
 .quote{
     padding-top: 150px;
     padding-bottom: 100px;
+    margin: auto;
 }
 
 
@@ -114,43 +23,31 @@ section{
 .first-container {
     display: flex;
     width: 90%;
+    max-width: 1000px;
     margin: auto;
     padding-top: 100px;
-    padding-left: 50px;
+    position: relative;
 }
 
 .grand-sideheader{
     position: absolute;
     transform: rotate(90deg);
     transform-origin: bottom left;
-    top: 1610px;
-    left: 80px;
+    top: 50px;
+    left: -80px;
     margin: 0;
     line-height: 1;
 }
 
 .first-image{
-    width: 50%;
+    width: 40%;
 }
 .singleimg{
-    width: 800px;
-    height: 550px;
+    height: auto;
 }
 .first-subtext{
-    width: 100%;
+    width: 40%;
     text-align: center;
-    padding-top: 10%;
-    padding-left: 100px;
-}
-
-.first-subtext h3{
-    color: gold;
-    font-family: "karmina", serif;
-    font-weight: 400;
-    font-size: 30px;
-    text-align: center;
-    width: 70%;
-    padding: 50px;
     margin: auto;
 }
 
@@ -159,40 +56,30 @@ section{
 .second-container{
     display: flex;
     width: 90%;
+    max-width: 1000px;
     margin: auto;
     padding-top: 200px;
+    position: relative;
 }
 
 .upright-sideheader{
     position: absolute;
     transform: rotate(90deg);
     transform-origin: bottom left;
-    top: 2365px;
-    right: 0;
+    top: 150px;
+    right: -245px;
     margin: 0;
     line-height: 1;
 }
 .second-image{
-    width: 50%;
-    padding-left: 20px;
-    padding-right: 120px;
+    width: 40%;
 }
 .singleimg{
-    width: 800px;
-    height: 550px;
+    width: 100%;
+    height: auto;
 }
 .second-subtext{
-    width: 100%;
-    text-align: center;
-    padding:60px;
-    padding-top: 140px;
-}
-
-.second-subtext h3{
-    color: gold;
-    font-family: "karmina", serif;
-    font-weight: 400;
-    font-size: 30px;
+    width: 40%;
     text-align: center;
     margin: auto;
 }
@@ -201,25 +88,28 @@ section{
 .third-container{
     width: 90%;
     margin: auto;
+    max-width: 1000px;
     padding-top: 200px;
+    position: relative;
 }
 
 .exotic-sideheader{
     position: absolute;
     transform: rotate(90deg);
     transform-origin: bottom left;
-    top: 3125px;
-    left: 80px;
+    top: 160px;
+    left: -80px;
     margin: 0;
     line-height: 1;
 }
 
 .third-image{
-    padding-left: 20px;
+    margin: auto;
+    font-size: 0;
 }
 
 .squaregrid{
-    width: 48%;
+    width: calc(50% - 10px);
     height: 300px;
     margin: 5px;
     object-fit: cover;
@@ -229,20 +119,18 @@ section{
 .fourth-container{
     display: flex;
     width: 90%;
+    max-width: 1000px;
     margin: auto;
     padding-top: 200px;
+    position: relative;
 }
 
 .fourth-image{
-    /* width: 80%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around; */
-    padding-left: 20px;
+    font-size: 0;
 }
 
 .gridimg{
-    width: 48%;
+    width: calc(50% - 10px);
     height: 300px;
     margin: 5px;
     object-fit: cover;
@@ -252,14 +140,10 @@ section{
     position: absolute;
     transform: rotate(90deg);
     transform-origin: bottom left;
-    top: 4025px;
-    right: -300px;
+    top: 155px;
+    right: -500px;
     margin: 0;
     line-height: 1;
-}
-
-.special-sideheader h2{
-    margin: 0;
 }
 
 
@@ -268,17 +152,20 @@ section{
 
 .fifth-container{
     display: flex;
-    padding-top: 200px;
+    width: 90%;
+    margin: auto;
+    max-width: 1000px;
+    padding-top: 150px;
     padding-bottom: 250px;
-    padding-left: 100px;
+    position: relative;
 }
 
 .explore-sideheader{
     position: absolute;
     transform: rotate(90deg);
     transform-origin: bottom left;
-    top: 4790px;
-    left: 80px;
+    top: 100px;
+    left: -80px;
     margin: 0;
     line-height: 1;
 }
@@ -286,13 +173,13 @@ section{
 .fifth-container a{
     font-family: 'Sintony', sans-serif;
     font-weight: 700;
-    font-size: 20px;
+    font-size: 26px;
     color: black;
 }
-.aboutbox, .pianobox, .manufacturebox, .artistsbox, .purchasebox{  
+.aboutbox, .pianobox, .manufacturebox{  
     background-color: white;
-    margin: 10px;
-    width: 150px;
+    margin-right: 20px;
+    width: 50%;
     height: 170px;
     padding-left: 20px;
     padding-top: 20px;
@@ -300,26 +187,18 @@ section{
     margin-bottom: 90px;
 }
 
-footer{
-    background-color: black;
-    padding: 60px;
-    padding-bottom: 30px;
+.artistsbox{
+    background-color: white;
+    width: 50%;
+    height: 170px;
+    padding-left: 20px;
+    padding-top: 20px;
+    display: flex;
+    margin-bottom: 90px;
 }
 
-footer p{
-    color: white;
-    font-family: "karmina", serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 11px;
-    margin: 5px;
-}
 
 /* hover stylings */
-
-nav a:hover{
-    color: rgb(192, 3, 3);
-}
 
 .first-container:hover h2,.second-container:hover h2,.third-container:hover h2,.fourth-container:hover h2{
     color: rgb(192, 3, 3);
@@ -335,109 +214,196 @@ nav a:hover{
     transform: translateY(-15px);
 }
 
-/* medium-sized screens */
-@media screen and (min-width: 769px) and (max-width: 1440px) {
-    .content-container {
-        width: 50%;
-        margin: auto;
+
+/* Responsive */
+
+@media (max-width:1060px){
+    .first-container, .second-container, .third-container, .fourth-container, .fifth-container{
+        width: 80%;
     }
 
-    .quote h3 {
-        color: gold;
-        font-family: "karmina", serif;
-        font-weight: 400;
-        font-size: 25px;
-        padding: 50px;
-        padding-top: 70px;
-        width: 50%;
-        text-align: center;
-        margin: auto;
+    .fifth-container{
+        padding-bottom: 100px;
     }
-    
-    nav{
-        justify-content: space-evenly;
-        align-items: center;
-        font-family: 'Sintony', sans-serif;
-        font-weight: 700;
+
+    .fifth-container a{
         font-size: 20px;
-        /* top: 0;
-        position: fixed; */
-        width: auto;
-        margin: auto;
-        padding-top: 20px;
+    }
+}
+
+@media (max-width: 936px){
+    .second-subtext h3{
+        font-size: 24px;
+    }
+
+    .fifth-container, .aboutbox, .pianobox, .manufacturebox, .artistsbox{
+        flex-direction: column;
+    }
+
+    .aboutbox, .pianobox, .manufacturebox, .artistsbox{
+        height: auto;
+        width:calc(100% - 20px);
         padding-bottom: 20px;
-        height: 60px;
+        margin-bottom: 20px;
+        margin-right: 0;
+    }
+}
+
+@media (max-width:860px){
+    .first-container, .second-container, .third-container, .fourth-container, .fifth-container{
+        width: 70%;
+    }
+    .first-container{
+        padding-top: 50px;
+        flex-direction: column;
+    }
+    .grand-sideheader{
+        top: 0px;
+    }
+    .first-image{
+        margin: auto;
+        width: 100%;
+    }
+    .first-subtext{
+        padding-top: 30px;
+        width: 100%;
+    }
+    .second-container{
+        flex-direction: column-reverse;
+    }
+    .second-image{
+        margin: auto;
+        width: 100%;
+    }
+    .second-subtext{
+        width: 100%;
+        padding-top: 30px;
+    }
+}
+
+
+@media (max-width:690px){
+    
+    .grand-sideheader{
+        top: 10px;
+        left: -70px;
+    }
+    .upright-sideheader{
+        top: 155px;
+        right: -220px;
+    }
+    .exotic-sideheader{
+        top: 160px;
+        left: -70px;
+    }
+    .special-sideheader{
+        top: 155px;
+        right: -445px;
+    }
+    .explore-sideheader{
+        top: 110px;
+        left: -70px;
+    }
+}
+
+@media (max-width:580px) {
+    .second-subtext h3{
+        font-size: 21px;
+    }
+    .third-container{
+        flex-direction: column;
+    }
+    .squaregrid{
+        width: 100%;
+        height: 150px;
+    }
+    .fourth-container{
+        flex-direction: column;
+    }
+    .gridimg{
+        width: 100%;
+        height: 150px;
+    }
+}
+
+@media (max-width:545px){
+    .quote{
+        padding-top: 50px;
+    }
+    .first-container, .second-container, .third-container, .fourth-container, .fifth-container{
+        width: 60%;
+    }
+
+    .grand-sideheader h2, .upright-sideheader h2, .exotic-sideheader h2, .special-sideheader h2, .explore-sideheader h2{
+        font-size: 35px;
+    }
+
+    .grand-sideheader{
+        top: 65px;
+        left: -60px;
+    }
+    .upright-sideheader{
+        top: 160px;
+        right: -190px;
+    }
+    .exotic-sideheader{
+        top: 170px;
+        left: -60px;
+    }
+    .special-sideheader{
+        top: 160px;
+        right: -390px;
+    }
+    .explore-sideheader{
+        top: 115px;
+        left: -60px;
+    }
+}
+
+@media (max-width:480px){
+    .second-container, .third-container, .fourth-container, .fifth-container{
+        padding-top: 100px;
+    }
+
+    .first-container{
+        padding-top: 0;
+    }
+
+    .grand-sideheader{
+        top: -40px;
+        left: -60px;
+    }
+    .upright-sideheader{
+        top: 60px;
+        right: -190px;
+    }
+    .exotic-sideheader{
+        top: 70px;
+        left: -60px;
+    }
+    .special-sideheader{
+        top: 60px;
+        right: -395px;
+    }
+    .explore-sideheader{
+        top: 65px;
+        left: -60px;
+    }
+}
+
+@media (max-width:450px){
+    .fifth-container a{
+        font-size: 17px;
+    }
+    .second-subtext h3{
+        font-size: 19px;
     }
     
-    nav a{
-        padding: 0 80px;
-        vertical-align: middle;
+}
+
+@media (max-width:390px){
+    .second-subtext h3{
+        font-size: 15px;
     }
-    
-    img.logo{
-        width: 50px;
-        height: 50px;
-        /* padding-top: 20px; */
-        /* transform: translateY(12px); */
-    }
-    
 
-    /* grand section */
-.first-container {
-    display: flex;
-    flex-direction: column;
-    width: 50%;
-    margin: auto;
-    padding-top: 100px;
-    padding-left: 0;
-    align-items: center;
 }
-
-.grand-sideheader{
-    display: flex;
-    position: relative;
-    transform: rotate(0deg);
-    transform-origin: bottom left;
-    top: 0px;
-    left: 0px;
-    margin: 0;
-    line-height: 1;
-    text-align: center;
-}
-
-.first-image{
-    width: 50%;
-    display: flex;
-    padding: 0;
-}
-.singleimg{
-    width: 800px;
-    height: 550px;
-}
-.first-subtext{
-    display: flex;
-    width: 100%;
-    text-align: center;
-    padding-top: 10%;
-}
-
-.first-subtext h3{
-    color: gold;
-    font-family: "karmina", serif;
-    font-weight: 400;
-    font-size: 25px;
-    text-align: center;
-    width: 70%;
-    padding: 0px;
-    margin: auto;
-}
-}
-
-@media screen and (min-width: 1440px) {
-    .content-container {
-        width: 90%;
-    }
-}
-
-
-

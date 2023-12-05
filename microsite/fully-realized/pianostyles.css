@@ -1,106 +1,12 @@
-html{
-    background-color: black;
-}
-
-.content-container{
-    width: 90%;
-    margin: auto;
-}
-
-/* homepage/general code */
-
-a{
-    text-decoration: none;
-    color: white;
-
-}
-
-p, ul{
-    color: white;
-    font-family: "karmina", serif;
-    font-weight: 400;
-    font-style: normal;
-}
-
-h1{
-    position: absolute;
-    right: 40px;
-    bottom: 40px;
-    font-size: 60px;
-    margin: 0;
-}
-
-h2{
-    font-size: 45px;
-}
-
-h1, h2{
-    color: white;
-    font-family: 'Sintony', sans-serif;
-    font-weight: 400;
-    text-transform: uppercase;
-}
-
-
-h3{
-    color: gold;
-    font-family: "karmina", serif;
-    font-weight: 400;
-    font-size: 30px;
-    padding: 50px;
-    padding-top: 70px;
-    width: 50%;
-    text-align: center;
-    margin: auto;
-}
-
-nav{
-    justify-content: space-between;
-    align-items: center;
-    font-family: 'Sintony', sans-serif;
-    font-weight: 700;
-    font-size: 20px;
-    /* top: 0;
-    position: fixed; */
-    margin: auto;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    height: 60px;
-}
-
-nav a{
-    padding: 0 80px;
-    vertical-align: middle;
-}
-
-.nav_red{
-    color: rgb(192, 3, 3);
-}
-
-img.logo{
-    width: 50px;
-    height: 50px;
-    /* padding-top: 20px; */
-    /* transform: translateY(12px); */
-}
 
 .headerpianos{
     height: calc(100vh - 96px);
     /* height: 80vh; */
     width: 100vw;
-    object-fit: cover;
     opacity: 50%;
     object-fit: fill;
     object-position: top center;
     left: 0;
-}
-
-.bodytext p{
-    color: white;
-    font-family: "karmina", serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 19px;
 }
 
 /* general image layout */
@@ -244,22 +150,6 @@ img.logo{
     width: 79%;
     margin: auto;
     padding-bottom: 200px;
-}
-
-
-footer{
-    background-color: black;
-    padding: 60px;
-    padding-bottom: 30px;
-}
-
-footer p{
-    color: white;
-    font-family: "karmina", serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 11px;
-    margin: 5px;
 }
 
 /* hover stylings */

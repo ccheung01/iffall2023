@@ -1,95 +1,7 @@
-html{
-    background-color: black;
-}
-
-.content-container{
-    width: 90%;
-    margin: auto;
-}
-
-/* homepage/general code */
-
-a{
-    text-decoration: none;
-    color: white;
-
-}
-
-p{
-    color: white;
-    font-family: "karmina", serif;
-    font-weight: 400;
-    font-style: normal;
-}
-
-h1{
-    position: absolute;
-    right: 40px;
-    bottom: 40px;
-    font-size: 60px;
-    margin: 0;
-}
-
-h2{
-    font-size: 45px;
-}
-
-h1, h2{
-    color: white;
-    font-family: 'Sintony', sans-serif;
-    font-weight: 400;
-    text-transform: uppercase;
-}
-
-
-h3{
-    color: gold;
-    font-family: "karmina", serif;
-    font-weight: 400;
-    font-size: 30px;
-    padding: 50px;
-    padding-top: 70px;
-    width: 50%;
-    text-align: center;
-    margin: auto;
-}
-
-nav{
-    justify-content: space-between;
-    align-items: center;
-    font-family: 'Sintony', sans-serif;
-    font-weight: 700;
-    font-size: 20px;
-    /* top: 0;
-    position: fixed; */
-    width: 100%;
-    margin: auto;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    height: 60px;
-}
-
-nav a{
-    padding: 0 80px;
-    vertical-align: middle;
-}
-
-.nav_red{
-    color: rgb(192, 3, 3);
-}
-
-img.logo{
-    width: 50px;
-    height: 50px;
-    /* padding-top: 20px; */
-    /* transform: translateY(12px); */
-}
-
 .headermanufacture{
     height: calc(100vh - 96px);
     /* height: 80vh; */
     width: 100vw;
-    object-fit: cover;
     opacity: 50%;
     object-fit: fill;
     object-position: top center;
@@ -97,92 +9,105 @@ img.logo{
 }
 
 .img{
-    width: 1000px;
-    height: 750px;
+
+    width: 100%;
+    height: auto;
+    object-fit: cover;
 }
+
+.first-image, .second-image, .third-image, .fourth-image{
+    width: 100%;
+}
+
+.first-text, .second-text, .third-text, .fourth-text{
+    padding-top: 30px;
+    /* font-size: 19px; */
+}
+
+/* strings and pinblocks */
 
 .first-container {
-    display: flex;
+    /* display: flex; */
     width: 90%;
     margin: auto;
+    max-width: 1000px;
     padding-top: 200px;
-}
+    position: relative;
 
-.first-image{
-    margin: auto;
 }
 
 .string-sideheader{
     position: absolute;
     transform: rotate(90deg);
     transform-origin: bottom left;
-    top: 1135px;
-    left: 260px;
+    top: 150px;
+    left: -75px;
     margin: 0;
     line-height: 1;
 }
 
+/* keys and action */
 
 .second-container {
-    display: flex;
+    /* display: flex; */
     width: 90%;
+    max-width: 1000px;
     margin: auto;
     padding-top: 200px;
+    position: relative;
 }
 
 .key-sideheader{
     position: absolute;
     transform: rotate(90deg);
     transform-origin: bottom left;
-    top: 2085px;
-    right: 10px;
+    top: 150px;
+    right: -400px;
     margin: 0;
     line-height: 1;
 }
 
-.second-image{
-    margin: auto;
-}
+/* Rim and Plates */
 
 .third-container {
-    display: flex;
+    /* display: flex; */
     width: 90%;
     margin: auto;
+    max-width: 1000px;
     padding-top: 200px;
+    position: relative;
 }
 
-.third-image{
-    margin: auto;
-}
 
 .rim-sideheader{
     position: absolute;
     transform: rotate(90deg);
     transform-origin: bottom left;
-    top: 3040px;
-    left: 260px;
+    top: 150px;
+    left: -75px;
     margin: 0;
     line-height: 1;
 }
 
+/* Soundboard and Bridges */
+
 .fourth-container {
-    display: flex;
+    /* display: flex; */
     width: 90%;
     margin: auto;
+    max-width: 1000px;
     padding-top: 200px;
     padding-bottom: 250px;
+    position: relative;
 }
 
-.fourth-image{
-    margin: auto;
-}
 
 .bridge-sideheader{
     position: absolute;
     transform: rotate(90deg);
     transform-origin: bottom left;
-    top: 3988px;
-    right: -200px;
+    top: 150px;
+    right: -610px;
     margin: 0;
     line-height: 1;
 }
@@ -214,3 +139,49 @@ nav a:hover{
     transform: translateX(-90px);
 }
 
+/* responsive */
+
+@media (max-width: 1300px){
+    .first-container, .second-container, .third-container, .fourth-container{
+        width: 80%;
+    }
+}
+
+@media (max-width: 990px){
+    .first-container, .second-container, .third-container, .fourth-container{
+        width: 70%;
+    }
+}
+
+@media (max-width:690px){
+
+    .string-sideheader{
+        top: 160px;
+    }
+
+    .key-sideheader{
+        top: 160px;
+        right: -370px;
+    }
+
+    .rim-sideheader{
+        top: 160px;
+    }
+
+    .bridge-sideheader{
+        top: 160px;
+        right: -550px;
+    }
+
+}
+
+@media (max-width:605px){
+    .first-container, .second-container, .third-container, .fourth-container{
+        width: 60%;
+    }
+    .string-sideheader h2, .key-sideheader h2, .rim-sideheader h2, .bridge-sideheader h2{
+        font-size: 36px;
+    }
+
+
+}
