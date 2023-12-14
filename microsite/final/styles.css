@@ -407,3 +407,9 @@
     }
 
 }
+
+@media (max-width:360px){
+    .exotic-sideheader{
+        white-space: nowrap;
+    }
+}
