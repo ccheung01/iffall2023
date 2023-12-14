@@ -1,0 +1,143 @@
+html{
+    background-color: rgb(255, 255, 255);
+}
+h1, h2, h3{
+    font-family: 'Manrope', sans-serif;
+}
+
+h1{
+    font-size: 50px;
+    margin-bottom: 0px;
+    color: rgb(150, 165, 13);
+    font-weight: 800;
+}
+
+h2{
+    font-size: 29px;
+}
+
+h3{
+    margin-top: 5px;
+    margin-left: 10px;
+    font-style: italic;
+}
+
+p{
+    font-family: 'Crimson Text', serif;
+    font-size: 20px;
+}
+
+header{
+    margin-bottom: 150px;
+    padding-left: 50px;
+}
+
+.first-container, .second-container, .third-container{
+    width: 60%;
+    margin: auto;
+    margin-bottom: 100px;
+    height: auto;
+}
+
+.content{
+    width: 100%;
+    margin: auto;
+    display: flex;
+    margin-top: 40px;
+}
+
+.mobile-content{
+    width: 35%;
+    height: 380px;
+    margin-right: 30px;
+}
+
+.website-content{
+    width: 65%;
+    height: 380px;
+}
+
+.mobile-content h3, .website-content h3{
+    font-style: normal;
+}
+
+.mobile{
+    width: 100%;
+    height: 100%;
+}
+
+.website{
+    width: 100%;
+    height: 100%;
+}
+
+.first-container{
+    border-top: 2px solid black;
+    padding-top: 50px;
+}
+
+.first-container,.second-container{
+    margin-bottom: 150px;
+}
+
+.third-container{
+    border-bottom: 2px solid black;
+    padding-bottom: 200px;
+}
+
+footer{
+    font-size: 13px;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+/* hover stylings */
+
+.first-container:hover h2, .second-container:hover h2, .third-container:hover h2{
+    color: rgb(150, 165, 13);
+    font-size: 34px;
+}
+
+h1:hover{
+    text-shadow: 0 0 2px rgb(160, 177, 12), 0 0 3px rgb(185, 204, 16), 0 0 4px rgb(211, 231, 33);
+}
+
+
+@media (max-width: 1751px){
+    .content{
+        flex-direction: column;
+        align-items: center;
+    }
+    .website-content{
+        margin-top: 80px;
+        width: 450px;
+    }
+    .mobile-content{
+        width: 320px;
+    }
+}
+
+@media (max-width:900px){
+    header{
+        text-align: center;
+        padding-left: 0;
+        padding-top: 50px;
+    }
+}
+
+@media (max-width:500px){
+    .website-content{
+        display: none;
+    }
+
+    .mobile-content{
+        width: 90%;
+        margin: auto;
+    }
+
+    p{
+        font-size: 16px;
+    }
+
+}
